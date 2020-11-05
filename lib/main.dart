@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum8/home.dart';
+import 'package:praktikum8/pilihan.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: HomePage(),
+      home: Pilihan(),
     );
   }
 }

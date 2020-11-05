@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Beranda"),
+        title: Text("Contoh Custom"),
         centerTitle: true,
       ),
       body: Container(
@@ -30,21 +30,13 @@ class _HomePageState extends State<HomePage> {
           itemBuilder: (context, int i){
             return InkWell(
               onTap: (){
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(
-                //     builder: (_) {
-                //       return DetailPage(
-                //         teks: 'Ini Item KE-${(i+1)}',
-                //       );
-                //     }
-                //   )
-                // );
                 Routes.changePage(context, 
                   DetailPage(
                     teks: 'Ini Item KE-${(i+1)}',
                   )
                 );
               },
+              // INI ADALAH CONTOH YG CUSTOM WIDGET (DIA DIAMBIL DARI LAIN VIEW)//
               child: CardView(
                 warna: Colors.teal,
                 isiTeks: 'Ini Item KE-${(i+1)}',
